@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage Luis</title>
+    <link rel="stylesheet" href="styleAlunos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Fira+Code:wght@300..700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Homepage</h1>
+        <section>
+
+            <div class="divApresentacao">
+                <h2>Atividade Avaliativa de Front-End. S.I - Noturno.</h2>
+                <p>
+                    Construir homepages pessoais responsivas utilizando HTML, CSS e JavaScript. <br>
+                    Aplicando boas práticas de estruturação, estilização e interatividade.
+                </p>
+                <p>
+                    <strong>CEST - Cetro Universitário Santa Terezinha.</strong>&nbsp;Profa: Ma. Pedriana Castro.
+                </p>
+            </div>
+
+            <div class="divAlunos">
+                <h2>Alunos</h2>
+                <nav class="cards">
+                    <li class="card"><a href="gilberto.html"> <strong>Gilberto</strong></a></li>
+                    <li class="card"><a href="samuel.html"><strong>Samuel</strong></a></li>
+                    <li class="card_s"><a href="luis.html"><strong>Luís Carlos</strong></a></li>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main>
+
+        <section class="blocoMain_sbm_foto_inter">         
+            <div>
+                <figure>
+                    <img src="assets/Imagem do WhatsApp de 2025-09-10 à(s) 16.00.06_8fb28ce2.jpg" alt="">
+
+                </figure>
+            </div>
+                
+            <div>
+                <h2 class="tituloImagem">Luís Carlos.</h2>
+                <p>Eu sou um estudante do curso de Sistemas de Informação. <br>Gosto de desafios e de fazer projetos onde posso por meus conhecimentos!</p>
+
+            </div>
+            <section id="portifolio" class="container">
+            <h2>Meus Interesses</h2>
+            <div>
+                <div class="cards_body">
+                    <div class="card_body">
+                        <h3>Programação Back-End</h3>
+                        <p>Estudo diversas linguagens de programação, mas principalmente Java. Sou mais inclinado ao Back-End onde consigo desenvolver soluções lógicas e aplica-lás.</p>
+                    </div>
+                    <div class="card_body">
+                        <h3>Estudos</h3>
+                        <p>Sou aluno de Sistemas de Infomação pelo CEST e Pesquisador pela FAPEMA com projeto na Área de Analise de dados. Porém, complemento meus estudos com cursos online.</p>
+                    </div>
+                    <div class="card_body">
+                        <h3>Lazer</h3>
+                        <p>A leitura é uma atividade costumeira e que me agrada, também gosto de fazer caminhadas como exercicio e passatempo, além de também apreciar muito viajes a novos lugares</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </section>
+
+        <section id="contato" class="container_contato">
+            <h2>Entre em contato</h2>
+                <form id="form-contato">
+
+                    <label for="nome">Nome:</label>
+                    <input class="inputs required" type="text" id="input_formulario" name="nome" oninput="validarNome()">
+                    <span class="mensagemSpan"> Campo Obrigatório.</span>
+
+
+                    <label for="email">Email:</label>
+                    <input class="inputs required" type="email" name="email" id="input_formulario" oninput="validarEmail()">
+                    <span class="mensagemSpan">Digite um E-mail valido.</span>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea class="inputs required" name="mensagem" id="input_formulario" oninput="validarTexto()"></textarea>
+                    <span class="mensagemSpan">Minimo de 10 caracteres.</span>
+
+                    <button class="enviar" onclick="enviar()" type="submit">Enviar</button>
+
+                    <p id = "mensagemDeEnvio"> </p>
+                    
+                </form>
+        </section>
+        <section>
+            <div>
+                <button onclick="window.location.href= '../index.html' ">Voltar para o Inicio</button>
+            </div>
+        </section>
+
+        
+
+    </main>
+    <script  src="scriptAlunos.js"></script>
+    
+</body>
+<footer>
+    <p class="paragrafooter">&copy; 2025 - Desenvolvido por: Gilberto Barros¹; Samuel Pereira²; Luis Carlos³.</p><br>
+
+    <p class="paragrafooter"> ¹gilberto.barros.silva@cest.edu.br - (98) 98353-4979. --- <a class="a_fonte" href="http://www.instagram.com/gilberttobarros_/" target="_blank" rel="noopener noreferrer">Instagram</a> </p>
+    <p class="paragrafooter"> ²samuel.svarao@cest.edu.br - (61) 99974-4607. --- <a class="a_fonte" href="http://www.instagram.com/samuel_pdsv/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+    <p class="paragrafooter"> ³luiscarlos.ferreira@cest.edu.br - (98) 98832-6382. ---<a class="a_fonte" href="https://www.instagram.com/luiisferreiraj/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+</footer>
+
+</html>
